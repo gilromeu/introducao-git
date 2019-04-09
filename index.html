@@ -1,0 +1,272 @@
+
+<!doctype html>
+
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+  <meta name="theme-color" content="#4F7DC9">
+  <meta charset="UTF-8">
+  <title>Introdução a ferramenta Git</title>
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Code+Pro:400|Roboto:400,300,400italic,500,700|Roboto+Mono">
+  <link rel="stylesheet" href="//fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://storage.googleapis.com/codelab-elements/codelab-elements.css">
+  <style>
+    .success {
+      color: #1e8e3e;
+    }
+    .error {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <google-codelab-analytics gaid="UA-49880327-14"></google-codelab-analytics>
+  <google-codelab title="Introdução a ferramenta Git"
+                  environment="web"
+                  feedback-link="">
+    
+      <google-codelab-step label="Introdução" duration="0">
+        <p><strong>Git </strong>é um sistema de controle de versões distribuído, usado principalmente no desenvolvimento de software, mas pode ser usado para registrar o histórico de edições de qualquer tipo de arquivo. O Git foi inicialmente projetado e desenvolvido por Linus Torvalds para o desenvolvimento do kernel Linux, mas foi adotado por muitos outros projetos.</p>
+<p>Cada diretório de trabalho do Git é um repositório com um histórico completo e habilidade total de acompanhamento das revisões, não dependente de acesso a uma rede ou a um servidor central. O Git também facilita a reprodutibilidade científica em uma ampla gama de disciplinas, da ecologia à bioinformática, arqueologia à zoologia.</p>
+<h2><strong>Serviços online que utilizam o Git</strong><strong>?</strong></h2>
+<p>Essas são as plataformas mais utilizadas mundialmente:</p>
+<ul>
+<li><a href="http://github.com" target="_blank"><strong>GitHub </strong></a>- O GitHub é mundialmente usado e chega a ter mais de 3 milhões de usuários ativos, contribuindo em projetos comerciais ou pessoais. Hoje o GitHub abriga mais de 65 milhões de projetos, alguns deles que são conhecidos mundialmente são: WordPress, GNU/Linux, <a href="https://pt.wikipedia.org/wiki/Atom" target="_blank">Atom</a>, Electron. GitHub também oferece suporte ao recurso de organização que é amplamente utilizado por aqueles que querem uma escala maior para seus projetos. Na maioria das vezes, o recurso é usado por empresas já existentes como o Google, Microsoft e WordPress. Em 4 de junho de 2018, a Microsoft anunciou a compra da plataforma por US$ 7,5 bilhões, equivalente a R$ 27,225 bilhões;</li>
+<li><a href="https://gitlab.com" target="_blank"><strong>GitLab</strong></a> - Adapta-se a qualquer fator de forma: desktop, celular, tablet ou o que for o próximo. O GitLab é um gerenciador de <a href="https://pt.wikipedia.org/wiki/Reposit%C3%B3rio" target="_blank">repositório</a> de software baseado em <a href="https://pt.wikipedia.org/wiki/Git" target="_blank">git</a>. GitLab é similar ao <a href="https://pt.wikipedia.org/wiki/GitHub" target="_blank">GitHub</a>, mas o GitLab permite que os desenvolvedores armazenem o código em seus próprios servidores, ao invés de servidores de terceiros. Ele é <a href="https://pt.wikipedia.org/wiki/Software_livre" target="_blank">software livre</a>, distribuído pela <a href="https://pt.wikipedia.org/wiki/Licen%C3%A7a_MIT" target="_blank">Licença MIT</a>;</li>
+<li><a href="https://bitbucket.org/" target="_blank"><strong>Bitbucket</strong></a> - É um serviço de hospedagem de projetos utilizando um sistema de controle de versões distribuído. É similar ao <a href="https://pt.wikipedia.org/wiki/GitHub" target="_blank">GitHub</a> (que também utiliza o <a href="https://pt.wikipedia.org/wiki/Git" target="_blank">Git</a>). Bitbucket têm um serviço grátis e um comercial.</li>
+</ul>
+<h2><strong>O que você aprenderá</strong></h2>
+<ul>
+<li>Instalar a ferramenta git</li>
+<li>Comandos básicos utilizando a ferramenta git</li>
+<li>Enviar um projeto para um repositório online</li>
+</ul>
+<h2><strong>O que você precisa</strong></h2>
+<ul>
+<li>Um computador com sistema operacional Windows e com acesso a internet</li>
+<li>Um navegador instalado com a versão mais recente</li>
+</ul>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Baixando a ferramenta Git" duration="0">
+        <h2><strong>Download do Git</strong></h2>
+<p>Clique em um dos links para baixá-lo direto desse codlab de acordo com a versão do seu sistema operacional</p>
+<table>
+<tr><td colspan="1" rowspan="1"><p><strong>Download 32 bits</strong></p>
+<p><a href="https://github.com/git-for-windows/git/releases/download/v2.21.0.windows.1/Git-2.21.0-32-bit.exe" target="_blank"><paper-button class="colored" raised>Git de 32 bits para Windows </paper-button></a></p>
+</td><td colspan="1" rowspan="1"><p><strong>Download 64 bits</strong></p>
+<p><a href="https://github.com/git-for-windows/git/releases/download/v2.21.0.windows.1/Git-2.21.0-64-bit.exe" target="_blank"><paper-button class="colored" raised>Git de 64 bits para Windows </paper-button></a></p>
+</td></tr>
+</table>
+<p>Ou você pode ir até o site do <a href="https://git-scm.com/download/" target="_blank">site-oficial</a>  e baixar a versão mais recente.</p>
+<h2><strong>Download no site</strong></h2>
+<p>Siga esse passo a passo para realizar a instalação da ferramenta git.</p>
+<p>Primeiro, acesse o <a href="https://git-scm.com/downloads" target="_blank"><strong>site oficial</strong></a> para baixar o instalador do git. Escolha o sistema operacional que você pretende instalar (no meu caso é o Windows) e baixe o instalador apropriado.</p>
+<p><img alt="Página de download do instalador do GIT" style="width: 602.00px" src="img\20f3ddc545aed1f4.png"></p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Instalação do Git" duration="0">
+        <p>Após o instalador ser baixado, execute-o.</p>
+<p><img alt="Executando o instalador do GIT" style="width: 602.00px" src="img\ca18abaf29c713c9.png"></p>
+<p>A primeira tela do instalador do GIT apresenta os termos da licença de utilização do GIT. Basta clicar em <strong>Próximo</strong>.</p>
+<p><img alt="Primeira tela do instalador do GIT." style="width: 499.00px" src="img\9364bdedd59533de.png"></p>
+<p>A segunda tela é para a seleção do local da instalação, eu mantenho o padrão C:\Program Files\Git, mas sinta-se livre para alterar. Após definir o local da instalação do GIT, clique em <strong>Próximo</strong>.</p>
+<p><img alt="Tela de seleção do local de instalação do GIT." style="width: 499.00px" src="img\e1657cc84ccd8ea4.png"></p>
+<p>Agora o instalador oferece a possibilidade de selecionar os componentes do GIT que queremos que seja instalado.</p>
+<p>Eu não gosto de adicionar ícones no Desktop, por isso eu desmarco. Os demais componentes eu marquei todos:</p>
+<ul>
+<li>Integração com Windows Explorer</li>
+<li>Suporte a arquivos grandes</li>
+<li>Associação de arquivos, e editor de texto padrão</li>
+<li>Permitir que o prompt de comandos seja colorido para as opções do git</li>
+<li>Verificação diária de atualização.</li>
+</ul>
+<p>Escolha os componentes de sua preferência e clique em <strong>Próximo</strong>.</p>
+<p><img alt="Tela de seleção de componentes do GIT." style="width: 499.00px" src="img\637b012a8e51f2cb.png"></p>
+<p>Em seguida o instalador do GIT nos indica que criará uma pasta com atalhos no menu iniciar, se quiser, você pode marcar o <em>checkbox</em>Don&#39;t create a Start Menu folder para o instalador não criar esta pasta.</p>
+<p>No meu caso eu deixei o instalador criar os atalhos no menu Iniciar.</p>
+<p>Clique em <strong>Próximo</strong> para continuar a instalação.</p>
+<p><img alt="Tela de criação de atalho do GIT no menu Iniciar" style="width: 499.00px" src="img\cb999686623ada12.png"></p>
+<p>Na sequência o instalador pede para selecionarmos o editor de texto que deve ser utilizado para editar os conflitos que por ventura acontecerem.</p>
+<p>Eu gosto do Vim mesmo, mas você pode não tem muita afinidade com o Vim você pode alterar para Notepad++, Sublime, Atom, VS Code, ou outro editor de sua preferência.</p>
+<p>Após a escolha, clique em <strong>Próximo</strong> para continuar com a instalação.</p>
+<p><img alt="Tela de seleção do editor de conflitos padrão do GIT" style="width: 499.00px" src="img\4984051e45049495.png"></p>
+<p>Neste momento começa algumas partes confusas para quem não conhece muito o GIT.</p>
+<p>Na próxima tela o instalador do GIT nos pergunta se queremos usar os comandos do git:</p>
+<ul>
+<li>somente no prompt de comandos do próprio git (chamado de Git Bash), neste caso ele não vai alterar a variável de ambiente PATH.</li>
+<li>no prompt do Windows (Windows Command Prompt), neste caso a variável de ambiente PATH será alterada para incluir o caminho de onde está o executável git.exe.</li>
+<li>no prompt do Windows + comandos utilitários do línux. Eu sempre marco esta opção, porque o instalador traz para o Windows alguns comando que eu uso muito no Linux, como cat, ls, find, etc. Neste caso a variável de ambiente PATH será alterada para incluir o caminho do executável git.exe e dos executáveis de cada comando utilitário do linux.</li>
+</ul>
+<p>Escolha a opção que acha mais adequada para você e clique em <strong>Próximo</strong>.</p>
+<p><img alt="Tela de ajuste da variável de ambiente PATH." style="width: 499.00px" src="img\10647e2db95c5ed.png"></p>
+<p>A tela seguinte do instalador oferece a opção de escolhar a biblioteca de validação de chaves de segurança SSL.</p>
+<p>Eu costumo utilizar a OpenSSL, que é compatível com outras plataformas.</p>
+<p>Escolha a que achar apropriada e clique em <strong>Próximo</strong>.</p>
+<p><img alt="Tela de seleção de biblioteca de validação de certificados SSL" style="width: 499.00px" src="img\980bad2f43b5ac43.png"></p>
+<p>Neste ponto da instalação, nos é perguntado como o git deve tratar o final dos arquivos de texto.</p>
+<p>Este é um assunto complicado de explicar em poucas palavras, mas vamos lá ...</p>
+<p>Vamos dar uma pequena pausa na instalação do GIT aqui para entender esse assunto.</p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Como é tratado o final de linha dos arquivos de textos" duration="0">
+        <p>O Windows e o Unix, tratam o final de linha dos arquivos texto de formas diferentes.</p>
+<p>Pra resumir a história ... o Windows segue um padrão antigo de comandos de impressora, chamado de CRLF, que indica para o cabeçote da impressora ir para o início horizontal (Carriage Return) e para iniciar uma próxima linha (Line Feed).</p>
+<p>Como se fosse aquela alavanca da máquina de escrever que funciona dessa forma, <em>vai pro início e para a próxima linha</em>.</p>
+<p>Já no linux, ficou comum somente o comando LF que teria o mesmo funcionamento do CRLF, ou seja, <em>próxima linha...início.</em></p>
+<p>Isso significa que o Linux usa um caracter ASCII para a quebra de linha e o Windows usa dois. Esta é a mesma origem da confusão entre \n e \r, mas isso é assunto importante agora.</p>
+<p>Por agora entenda as opções que o instalador do GIT oferece:</p>
+<ul>
+<li>converter LF para CRLF ao baixar arquivos e CRLF para LF ao comitar.</li>
+<li>baixar como é (não converte nada), mas comitar convertendo CRLF para LF.</li>
+<li>não converter nada, baixar como é e comitar como estiver.</li>
+</ul>
+<p>Eu marco a primeira opção, para evitar problemas de compatibilidade entre as plataformas.</p>
+<p><img alt="Tela de configuração de final de linha do instalador do GIT." style="width: 499.00px" src="img\aee24a582feec26.png"></p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Continuando a instalação" duration="0">
+        <p>Na sequência, o instalador oferece a opção de escolher o emulador de terminal (prompt) que queremos usar para o GIT. Podemos usar o console padrão do Windows (cmd.exe) ou o MinTTY que é um emulador que oferece algumas características melhores na minha opinião.</p>
+<p>Em suma, o cmd é usado para compatibilidade com plataformas de 32 bits, ou seja, se o seu windows for 32 bits, é melhor escolher o cmd mesmo, mas se o seu windows for de 64 bits, é melhor escolher o MinTTY, pq ele oferece alguns recursos melhores para terminal, como por exemplo <strong>maximizar</strong>.</p>
+<p><img alt="Tela de escolha de emulador de terminal do GIT." style="width: 499.00px" src="img\d3725f38c5cd1360.png"></p>
+<p>A penúltima tela nos oferece algumas opções extras, são elas:</p>
+<ul>
+<li>habilitar cache de arquivos na memória. Isso melhora o desempenho do git em alguns casos.</li>
+<li>habilitar o gerenciador de credenciais do GIT. Isso permite autenticação em duas etapas no VSTS e no GitHub, e precisa do framework .NET 4.5 para funcionar.</li>
+<li>habilitar links simbólicos: Sinceramente, não sei o que é isso no Windows e não me fez falta ainda, se você souber do que se trata, apreciarei muito uma explicação aí nos comentários. ;)</li>
+</ul>
+<p>Selecione os itens opcionais que você deseja e clique em <strong>Próximo</strong>.</p>
+<p><img alt="Tela de escolha de ítens opcionais do GIT no Windows" style="width: 499.00px" src="img\b7e488016b11f3ef.png"></p>
+<p>Por fim, última tela do instalador do GIT no Windows (UFA!!!), o instalador nos oferece alguns componentes que estão em fase de experimentação.</p>
+<p>São componentes que não foram muito testados, mas que parecem melhorar bastante a performance.</p>
+<p>Você escolhe se que instala ou não ...</p>
+<p>Eu não marquei.</p>
+<p>Após decidir se instala os componentes experimentais ou não, clique em <strong>Install</strong> para começar a instalação.</p>
+<p><img alt="Tela de seleção de componentes experimentais do GIT." style="width: 499.00px" src="img\4f37f8566e11877e.png"></p>
+<p>Depois da instalação, o instalador oferece a opção de já rodar o prompt do GIT (Git Bash) e ver o arquivo de texto com as notas da versão lançada.</p>
+<p>Se quiser uma dessas duas opções, marque-a, eu desmarquei as duas.</p>
+<p>Para finalizar, clique em <strong>Finish</strong>.</p>
+<p><img alt="Tela final do instalador do GIT" style="width: 499.00px" src="img\1d1bf40eaec8712e.png"></p>
+<p>Pronto, agora você tem o GIT instalado no seu Windows!</p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Comandos básicos" duration="0">
+        <h2><strong>Ajuda</strong></h2>
+<h5>Qualquer dúvida relacionado ao git você poderá digitar o seguinte comando no seu <strong>Git Bash.</strong></h5>
+<p><code>git help</code></p>
+<p><img style="width: 602.00px" src="img\e396e760fb4034d0.png"></p>
+<h5><strong>Comando específico</strong></h5>
+<p><code>git help add</code></p>
+<p><code>git help commit</code></p>
+<p><code>git help &lt;qualquer_comando_git&gt;</code></p>
+<h2><strong>Configuração</strong></h2>
+<h3><strong>Geral</strong></h3>
+<p>As configurações do GIT são armazenadas no arquivo .gitconfig localizado dentro do diretório do usuário do Sistema Operacional (Ex.: Windows: C:\Users\Documents and Settings\Usuario ou *nix /home/usuario).</p>
+<p>As configurações realizadas através dos comandos abaixo serão incluídas no arquivo citado acima.</p>
+<h5><strong>Setar usuário</strong></h5>
+<p><code>git config --global user.name &#34;Gil Romeu&#34;</code></p>
+<h5><strong>Setar email</strong></h5>
+<p><code>git config --global user.email gilromeu@teste.com.br</code></p>
+<h5><strong>Setar editor</strong></h5>
+<p><code>git config --global core.editor vim</code></p>
+<h2><strong>Repositório Local</strong></h2>
+<h3><strong>Criar novo repositório</strong></h3>
+<p><code>git init</code></p>
+<h3><strong>Verificar estado dos arquivos/diretórios</strong></h3>
+<p><code>git status</code></p>
+<h3><strong>Adicionar arquivo/diretório (staged area)</strong></h3>
+<h5><strong>Adicionar um arquivo em específico</strong></h5>
+<p><code>git add meu_arquivo.txt</code></p>
+<h5><strong>Adicionar um diretório em específico</strong></h5>
+<p><code>git add meu_diretorio</code></p>
+<h5><strong>Adicionar todos os arquivos/diretórios</strong></h5>
+<p><code>git add .        </code></p>
+<h5><strong>Adicionar um arquivo que esta listado no .gitignore (geral ou do repositório)</strong></h5>
+<p><code>git add -f arquivo_no_gitignore.txt</code></p>
+<h3><strong>Comitar arquivo/diretório</strong></h3>
+<h5><strong>Comitar um arquivo</strong></h5>
+<p><code>git commit meu_arquivo.txt</code></p>
+<h5><strong>Comitar vários arquivos</strong></h5>
+<p><code>git commit meu_arquivo.txt meu_outro_arquivo.txt</code></p>
+<h5><strong>Comitar informando mensagem</strong></h5>
+<p><code>git commit meuarquivo.txt -m &#34;minha mensagem de commit&#34;</code></p>
+<h3><strong>Remover arquivo/diretório</strong></h3>
+<h5><strong>Remover arquivo</strong></h5>
+<p><code>git rm meu_arquivo.txt</code></p>
+<h5><strong>Remover diretório</strong></h5>
+<p><code>git rm -r diretorio</code></p>
+<h3><strong>Visualizar histórico</strong></h3>
+<h5><strong>Exibir histórico</strong></h5>
+<p><code>git log</code></p>
+<h5><strong>Exibir histórico com diff das duas últimas alterações</strong></h5>
+<p><code>git log -p -2</code></p>
+<aside class="special"><p>Você também pode consultar o site oficial para mais comandos: <a href="https://git-scm.com/doc" target="_blank">Documentação do Git</a></p>
+</aside>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Hands-On" duration="0">
+        <p>Nesse <a href="https://pt.wikipedia.org/wiki/Hands_on" target="_blank">hands-on</a> vamos criar um repositório remoto e enviar os arquivos através da ferramenta git, para isso iremos utilizar o serviços do <a href="http://github.com" target="_blank">github</a>.</p>
+<p>Se você ainda não instalou a ferramenta git em seu computador por favor reveja esse codlab para continuar com esse hands-on, mas se você estiver seguro de continuar não problemas e partir diretor para esse hands-on.</p>
+<p>Após entrar no site do <a href="http://github" target="_blank">github</a>, vá em <a href="https://github.com/join?source=header-home" target="_blank"><strong>Sign up</strong></a> e escolha um <strong>username (nome do seu usuário)</strong>, digite o seu email em <strong>Email adress</strong> e escolha um <strong>Password (senha)</strong> siga todas as etapas conforme é apresentado no site e em seguida confirme</p>
+<p><img style="width: 602.00px" src="img\d691a7d4dbae8075.png"></p>
+<h2>Criando um repositório</h2>
+<p>Para criar um novo repositório vá em <a href="https://github.com/new" target="_blank">Create a repository</a> e digite um nome do repositório, digite o nome <strong>teste</strong>, somente para afim de teste depois você pode excluir. Em Seguida você pode clicar em <strong>Create repository.</strong></p>
+<p><img style="width: 602.00px" src="img\d6c5c53b92ece582.png"></p>
+<p>Em seguida você verá uma tela como essa abaixo. Nesta tela você poderá utilizar os comandos apresentados no caso de não ter um novo repositório em sua máquina local, já mais abaixo mostrará duas linhas de comando em que você poderá adicionar caso já tenha um repositório. </p>
+<p><img style="width: 602.00px" src="img\6c19921b07387e32.png"></p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Hands-On - Comitando os arquivos para o repositório remoto" duration="0">
+        <p>Para configurarmos um repositório em nossa máquina local vamos utilizar os comandos disponibilizado pelo <a href="https://github.com/" target="_blank">github </a>, quele apresentado após a criação do repositório conforme mostra a imagem abaixo.<img style="width: 542.00px" src="img\75d0c1f139cc7346.png"></p>
+<p>Crie uma pasta com o nome <strong>teste </strong>em seu computador  e em seguida abra o <strong>Git Bash</strong> em seu computador já instalado, assim eu acredito que esteja instalado, caso contrário veja nos primeiros tópicos deste codelabs onde é mostrado um passo a passo para instalação do Git em sua máquina local, já com o <strong>Git Bash</strong> aberto navegue até o local onde a pasta foi criada,deve ficar mais ou menos assim.</p>
+<p><img style="width: 476.00px" src="img\29209edff13f03fa.png"></p>
+<p>Dentro da pasta digite os seguintes comandos gerados na plataforma do <a href="https://github.com/" target="_blank">github</a>.</p>
+<p><code>echo &#34;# teste&#34; &gt;&gt; README.md</code></p>
+<p><code>git init</code></p>
+<p><code>git add README.md</code></p>
+<p><code>git commit -m &#34;first commit&#34;</code></p>
+<p><code>git remote add origin https://github.com/gilromeudevelop/teste.git</code></p>
+<p><code>git push -u origin master</code></p>
+<p>Observe que após entrar com esses comandos no <strong>Git Bash</strong> ele deverá ficar da seguinte forma. Veja na imagem abaixo que o nome do <strong>branch (master) </strong>raiz aparece logo após digitar o git init. Por últimos ao digitar o comando <code>git push -u origin master</code>, ele enviará o arquivo <strong>README.md </strong>que foi criado para o repositório remoto <a href="https://github.com/" target="_blank">github</a>.</p>
+<p><img style="width: 510.00px" src="img\df7f78fe02cb45e1.png"></p>
+<p>Se tudo ocorreu bem você deve obter a mesma tela como mostra na imagem abaixo.</p>
+<p><img style="width: 602.00px" src="img\1dd03b7a470139dc.png"></p>
+<p>Bom é isso espero que esse codelabs tenha ajudado, qualquer dúvida me envie um e-mail ou uma mensagem, será um prazer ajuda-lo.</p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Referências" duration="0">
+        <ol type="1" start="1">
+<li><a href="https://dicasdeprogramacao.com.br/como-instalar-o-git-no-windows/" target="_blank">Como instalar o GIT no Windows (Passo a passo!)</a></li>
+<li><a href="https://www.hostinger.com.br/tutoriais/comandos-basicos-de-git/" target="_blank">Comandos Básicos de GIT</a></li>
+<li><a href="https://git-scm.com/docs" target="_blank">Git-docs</a></li>
+<li><a href="https://gist.github.com/leocomelli/2545add34e4fec21ec16" target="_blank">Lista de comandos úteis do GIT</a></li>
+</ol>
+
+
+      </google-codelab-step>
+    
+  </google-codelab>
+
+  <script src="https://storage.googleapis.com/codelab-elements/native-shim.js"></script>
+  <script src="https://storage.googleapis.com/codelab-elements/custom-elements.min.js"></script>
+  <script src="https://storage.googleapis.com/codelab-elements/prettify.js"></script>
+  <script src="https://storage.googleapis.com/codelab-elements/codelab-elements.js"></script>
+
+</body>
+</html>
